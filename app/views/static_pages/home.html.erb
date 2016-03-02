@@ -22,17 +22,17 @@
   </div>
 <% else %>
   <div class="center jumbotron">
-    <h1>Welcome to the Sample App</h1>
+    <h1>Welcome to the Networking App</h1>
 
     <h2>
-      This is the home page for the
-      <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-      sample application.
+      Sign up and start organizaing micropost broadcasts to your team with
+      <%= link_to "Teamly", signup_path %>Teamly</a>
+      your online communication web app.
     </h2>
 
     <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
   </div>
 
-  <%= link_to image_tag("rails.png", alt: "Rails logo"),
-              'http://rubyonrails.org/' %>
+  <%= link_to image_tag("rails.png", alt: "Built entirely with Ruby on Rails"),
+              signup_path %>
 <% end %>
